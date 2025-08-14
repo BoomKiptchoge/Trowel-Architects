@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trowel Architectural Services - Professional Architectural Design & Construction</title>
+    <meta name="description" content="Trowel Architectural Services - Professional architectural design and construction services. Specializing in residential, commercial, and institutional projects in the Philippines.">
+    <meta name="keywords" content="architectural services, building design, construction, Philippines, residential design, commercial architecture">
+    <meta name="author" content="Trowel Architectural Services">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trowelarchitectural.com/">
+    <meta property="og:title" content="Trowel Architectural Services">
+    <meta property="og:description" content="Professional architectural design and construction services in the Philippines.">
+    <meta property="og:image" content="https://trowelarchitectural.com/og-image.jpg">
+   
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://trowelarchitectural.com/">
+    <meta property="twitter:title" content="Trowel Architectural Services">
+    <meta property="twitter:description" content="Professional architectural design and construction services in the Philippines.">
+    <meta property="twitter:image" content="https://trowelarchitectural.com/og-image.jpg">
+     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="Damit.css">
+     
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+ 
+    <!-- Page Loader  -->
+    <div id="pageLoader" class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <h1 class="loader-title">TROWEL</h1>
+                <p class="loader-subtitle">ARCHITECTURAL SERVICES</p>
+            </div>
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar">
+                    <div id="loaderProgress" class="loader-progress-fill"></div>
+                </div>
+                <p id="loaderText" class="loader-text">LOADING 0%</p>
+                <div class="loader-dots">
+                    <div class="loader-dot"></div>
+                    <div class="loader-dot"></div>
+                    <div class="loader-dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!--  Scroll Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+   <!--  Header -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\pictures\WhiteLogo.png" alt="Trowel Logo" />
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Trowel</span>
+                    <span class="logo-sub">Architectural Services</span>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+               <!--  Dark mode toggle moved here, right before hamburger menu  -->
+                <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+                 
+        <!-- Mobile Navigation -->
+        <div id="mobileNav" class="nav-mobile">
+            <nav class="nav-mobile-content">
+                <a href="#home" class="nav-link-mobile" data-section="home">HOME</a>
+                <a href="#about" class="nav-link-mobile" data-section="about">ABOUT</a>
+                <a href="#mission-vision" class="nav-link-mobile" data-section="mission-vision">MISSION & VISION</a>
+                <a href="#projects" class="nav-link-mobile" data-section="projects">PROJECTS</a>
+                <a href="#gallery" class="nav-link-mobile" data-section="gallery">GALLERY</a>
+                <a href="#contact" class="nav-link-mobile" data-section="contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    <!--  Mobile Menu Overlay -->
+    <div id="mobileOverlay" class="mobile-overlay"></div>
+
+   <!--  Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <video id="heroVideo" autoplay muted loop playsinline preload="auto">
+                <source src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\MKPLwebvideo.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+                
+        <div class="hero-content">
+            <h1 class="hero-title">
+                DESIGNING<br>THE FUTURE
+            </h1>
+            <div class="hero-divider"></div>
+            <p class="hero-subtitle">BUILDING COMFORT FOR PEOPLE</p>
+            <div class="hero-button-container">
+                <button class="hero-button" onclick="scrollToSection('projects')">
+                    <span class="button-text">EXPLORE PROJECTS</span>
+                    <div class="button-bg"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ABOUT US</h2>
+                <div class="section-divider"></div>
+            </div>
+                        
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="about-lead">Trowel Architectural Services stands as a beacon of innovation and excellence in the architectural landscape of the Philippines.</p>
+                    </div>
+                                        
+                    <div class="about-description">
+                        <p>Founded on the principles of functional elegance and purposeful design, we specialize in creating spaces that harmonize aesthetic beauty with practical functionality. Our team of skilled architects and designers brings together years of experience and a passion for transforming visions into reality.</p>
+                                                
+                        <p>From intimate residential sanctuaries to dynamic commercial spaces, we approach each project with meticulous attention to detail and a deep understanding of our clients' unique needs. Our portfolio spans across residential, commercial, monumental, industrial, and institutional projects, each reflecting our commitment to architectural excellence.</p>
+                                                
+                        <p>At Trowel Architectural Services, we believe that great architecture goes beyond mere construction—it creates environments that inspire, comfort, and endure. Every line we draw, every space we design, and every structure we envision is crafted with the understanding that architecture shapes the way people live, work, and connect.</p>
+                    </div>
+                </div>
+                               
+                <!--   Team Carousel -->
+                <div class="team-carousel-container">
+                    <h3 class="team-title">OUR TEAM</h3>
+                    <div class="team-carousel">
+                        <button class="team-arrow team-arrow-left">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"></polyline>
+                            </svg>
+                        </button>
+                                                
+                        <div class="team-members">
+                            <div class="team-member active">
+                                <div class="team-image">
+                                    <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\team1.jpg" alt="Team Member 1" class="team-photo">
+                                    <div class="team-overlay">
+                                        <div class="team-info">
+                                            <h4 class="team-name">Lead Architect</h4>
+                                            <p class="team-position">Principal Designer</p>
+                                            <p class="team-description">Leading our design team with innovative architectural solutions and sustainable practices.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="team-member">
+                                <div class="team-image">
+                                    <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\team2.jpg" alt="Team Member 2" class="team-photo">
+                                    <div class="team-overlay">
+                                        <div class="team-info">
+                                            <h4 class="team-name">Project Manager</h4>
+                                            <p class="team-position">Construction Supervisor</p>
+                                            <p class="team-description">Ensuring project delivery excellence and client satisfaction through meticulous project management.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="team-member">
+                                <div class="team-image">
+                                    <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\team3.jpg" alt="Team Member 3" class="team-photo">
+                                    <div class="team-overlay">
+                                        <div class="team-info">
+                                            <h4 class="team-name">Design Specialist</h4>
+                                            <p class="team-position">Interior Designer</p>
+                                            <p class="team-description">Creating beautiful and functional interior spaces that reflect our clients' vision and lifestyle.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <button class="team-arrow team-arrow-right">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                                        
+                    <div class="team-indicators">
+                        <div class="team-indicator active" data-index="0"></div>
+                        <div class="team-indicator" data-index="1"></div>
+                        <div class="team-indicator" data-index="2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--  Mission & Vision Section -->
+    <section id="mission-vision" class="mission-vision">
+        <div class="container">
+            <div class="mission-vision-content">
+                <div class="mission-section">
+                    <div class="mv-header">
+                        <h2 class="mv-title">OUR MISSION</h2>
+                        <div class="mv-divider"></div>
+                    </div>
+                    <div class="mv-text">
+                        <p>To create exceptional architectural solutions that seamlessly blend functionality, sustainability, and aesthetic excellence. We are committed to transforming our clients' visions into reality through innovative design, meticulous craftsmanship, and unwavering dedication to quality.</p>
+                        <p>Our mission extends beyond building structures—we craft environments that enhance human experiences, foster community connections, and contribute positively to the architectural heritage of the Philippines.</p>
+                    </div>
+                </div>
+                                
+                <div class="vision-section">
+                    <div class="mv-header">
+                        <h2 class="mv-title">OUR VISION</h2>
+                        <div class="mv-divider"></div>
+                    </div>
+                    <div class="mv-text">
+                        <p>To be the leading architectural firm in the Philippines, recognized for our innovative designs, sustainable practices, and transformative impact on communities. We envision a future where our architectural contributions inspire generations and set new standards for excellence in the industry.</p>
+                        <p>Through our work, we aspire to create a built environment that reflects the rich cultural heritage of the Philippines while embracing modern innovation and environmental responsibility.</p>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="core-values">
+                <h3 class="values-title">CORE VALUES</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h4 class="value-name">EXCELLENCE</h4>
+                        <p class="value-description">Pursuing the highest standards in every project we undertake.</p>
+                    </div>
+                                        
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                        </div>
+                        <h4 class="value-name">INTEGRITY</h4>
+                        <p class="value-description">Building trust through honest communication and ethical practices.</p>
+                    </div>
+                                        
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="value-name">INNOVATION</h4>
+                        <p class="value-description">Embracing creativity and cutting-edge solutions in our designs.</p>
+                    </div>
+                                        
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h4 class="value-name">SUSTAINABILITY</h4>
+                        <p class="value-description">Creating environmentally responsible and resource-efficient designs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">FEATURED PROJECTS</h2>
+                <div class="section-divider"></div>
+            </div>
+                        
+            <div class="projects-grid">
+                <div class="project-card" data-project="Mina-Residence">
+                    <div class="project-image">
+                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\pictures\MINAFRONT.jpg" alt="Mina Residence" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <svg class="project-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span class="project-view-text">VIEW PROJECT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Mina Residence</h3>
+                        <p class="project-description"> Mina Residence stands as a testament to modern sophistication, brought to life through the creative vision and technical expertise of Trowel Architectural Services</p>
+                    </div>
+                </div>
+                                
+                <div class="project-card" data-project="ignacio-farm">
+                    <div class="project-image">
+                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\pictures\IGNACIO FARM A.jpg" alt="Ignacio Farm" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <svg class="project-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span class="project-view-text">VIEW PROJECT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ignacio Farm</h3>
+                        <p class="project-description">Ignacio Farm in Cavinti, Laguna reimagines rural serenity through a refined architectural lens. This private sanctuary harmonizes natural beauty with purposeful structures, made possible through the professional services of Trowel Architectural Services.</p>
+                    </div>
+                </div>
+                                
+                <div class="project-card" data-project="casa-de-ixia">
+                    <div class="project-image">
+                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\pictures\bg3.0.jpg" alt="Casa De Ixia" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <svg class="project-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span class="project-view-text">VIEW PROJECT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Casa De Ixia</h3>
+                        <p class="project-description">Casa de Ixia in Bustos, Bulacan is a refined expression of private leisure, thoughtfully brought to life through the creative vision and architectural precision of Trowel Architectural Services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--  Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PROJECT GALLERY</h2>
+                <div class="section-divider"></div>
+            </div>
+                       
+            <!--  Gallery Navigation -->
+            <div class="gallery-nav">
+                <button class="gallery-nav-btn active" data-category="residential">RESIDENTIAL</button>
+                <button class="gallery-nav-btn" data-category="commercial">COMMERCIAL</button>
+                <button class="gallery-nav-btn" data-category="monumental">MONUMENTAL</button>
+                <button class="gallery-nav-btn" data-category="industrial">INDUSTRIAL</button>
+                <button class="gallery-nav-btn" data-category="institutional">INSTITUTIONAL</button>
+            </div>
+                        
+            <!-- Gallery Content -->
+            <div class="gallery-content">
+               <!--  Residential Projects  -->
+                <div class="gallery-category active" data-category="residential">
+                    <div class="gallery-carousel">
+                        <button class="gallery-arrow gallery-arrow-left">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"></polyline>
+                            </svg>
+                        </button>
+                                                
+                        <div class="gallery-projects">
+                           <!--  Existing Project 1 - Ignacio Farm  -->
+                            <div class="gallery-project active">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\IGNACIO FARM A.jpg" alt="Ignacio Farm" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Ignacio Farm</h3>
+                                            <div class="gallery-project-description">
+                                                <p>Located at Kalye Mayaman, Lumban Laguna, Ignacio Farm is a private villa, crafted as a modern sanctuary for family leisure, quiet retreats, and intimate gatherings surrounded by nature and serenity</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\IGNACIO FARM B.jpg" alt="Ignacio Farm Interior" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\IGNACIO FARM C.jpg" alt="Ignacio Farm Exterior" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <!--  Existing Project 2 - Casa De Ixia -->
+                            <div class="gallery-project">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\bg3.0.jpg" alt="Casa De Ixia" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Casa De Ixia</h3>
+                                            <div class="gallery-project-description">
+                                                <p>Casa de Ixia is a modern private villa located in Bustos, Bulacan, Philippines, designed as a minimalist sanctuary for rest, leisure, and intimate gatherings.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\Interior 1_CDI.jpg" alt="Casa De Ixia Interior 1" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\Interior 2_CDI.jpg" alt="Casa De Ixia Interior 2" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <!--  NEW Project 3 - Modern Family Home -->
+                            <div class="gallery-project">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\FRONT PERSPECTIVE.png" alt="Modern Family Home" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Mina Residence</h3>
+                                            <div class="gallery-project-description">
+                                                <p>ChatGPT said:
+                                                    Located in San Quintin, Pangasinan, Mina Residence is a sophisticated architectural design, awaiting construction, brought to life through the creative vision and technical expertise of Trowel Architectural Services.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\REAR PERSPECTIVE.png" alt="Modern Kitchen Design" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\LIVING ROOM 2.png" alt="Garden View" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--  NEW Project 4 - Tropical Villa -->
+                            <div class="gallery-project">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\1ST VIEW cropped.jpg" alt="Tropical Villa" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Bayaua Residence</h3>
+                                            <div class="gallery-project-description">
+                                                <p>A luxurious tropical villa featuring traditional Filipino architectural elements combined with modern design principles, creating an elegant retreat perfect for relaxation and entertainment.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\2ND VIEW cropped.jpg" alt="Tropical Villa Pool" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\3RD VIEW.jpg" alt="Tropical Villa Interior" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <button class="gallery-arrow gallery-arrow-right">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                                       
+                    <!-- Updated indicators for 4 projects -->
+                    <div class="gallery-indicators">
+                        <div class="gallery-indicator active" data-index="0"></div>
+                        <div class="gallery-indicator" data-index="1"></div>
+                        <div class="gallery-indicator" data-index="2"></div>
+                        <div class="gallery-indicator" data-index="3"></div>
+                    </div>
+                </div>
+                                
+                <!-- Commercial Projects -->
+                <div class="gallery-category" data-category="commercial">
+                    <div class="gallery-carousel">
+                        <button class="gallery-arrow gallery-arrow-left">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"></polyline>
+                            </svg>
+                        </button>
+                                                
+                        <div class="gallery-projects">
+                            <div class="gallery-project active">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\pp lunch main.jpg" alt="Pepper Lunch SM Cauayan" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">SM Cauayan Pepper Lunch Restaurant</h3>
+                                            <div class="gallery-project-description">
+                                                <p>Pepper Lunch SM City Cauayan is a newly opened casual dining spot located in Cauayan City, Isabela, Philippines. Known for its signature sizzling plates, it offers a dynamic and interactive dining experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\pp lunch 1.jpg" alt="Pepper Lunch Interior 1" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\pp lunch 2.jpg" alt="Pepper Lunch Interior 2" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="gallery-project">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\PepperLunch Marilao Main.jfif" alt="Pepper Lunch SM Marilao" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">SM Marilao Pepper Lunch Restaurant</h3>
+                                            <div class="gallery-project-description">
+                                                <p>Pepper Lunch SM City Marilao is an exciting upcoming addition to the vibrant dining scene in Marilao, Bulacan. Soon to open its doors inside SM City Marilao.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\PepperLunch Marilao 2.jfif" alt="Pepper Lunch Marilao 2" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\PepperLunch Marilao 1.jfif" alt="Pepper Lunch Marilao 1" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <!--  NEW THIRD COMMERCIAL PROJECT -->
+                            <div class="gallery-project">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="/placeholder.svg?height=400&width=600&text=Modern+Office+Complex" alt="Modern Office Complex" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Modern Office Complex</h3>
+                                            <div class="gallery-project-description">
+                                                <p>A state-of-the-art commercial office building in Makati CBD, featuring sustainable design elements, flexible workspaces, and modern amenities for the contemporary business environment.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Office+Lobby" alt="Office Lobby" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Workspace" alt="Modern Workspace" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <button class="gallery-arrow gallery-arrow-right">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                                        
+                    <div class="gallery-indicators">
+                        <div class="gallery-indicator active" data-index="0"></div>
+                        <div class="gallery-indicator" data-index="1"></div>
+                        <div class="gallery-indicator" data-index="2"></div>
+                    </div>
+                </div>
+                               
+                <!--  Monumental Projects  -->
+                <div class="gallery-category" data-category="monumental">
+                    <div class="gallery-carousel">
+                        <button class="gallery-arrow gallery-arrow-left">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"></polyline>
+                            </svg>
+                        </button>
+                                                
+                        <div class="gallery-projects">
+                            <div class="gallery-project active">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\045a809e-9d36-4a06-beee-7e8dbc3bf0f6.jpg" alt="Cultural Arts Center" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Del Poso Mausoleum</h3>
+                                            <div class="gallery-project-description">
+                                                <p> Located at Golden Gate Memorial Park San roque Baliuag Bulacan, the Del Poso Family Mausoleum stands as a modern tribute, designed with elegance and reverence to honor cherished memories. Its contemporary form and serene setting create a dignified space for remembrance, reflection, and lasting legacy.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\b7fa7caa-0489-429e-9d7f-d73cac327295.jpg" alt="Performance Hall" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\dae3474f-e804-4291-8b13-897fe19e597d.jpg" alt="Gallery Space" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="gallery-project">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\cruz mausoleum 1.png" alt="Memorial Monument" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Cruz Mausoleum</h3>
+                                            <div class="gallery-project-description">
+                                                <p>A commemorative structure honoring local heroes with timeless architectural design.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="C:\Users\Franz Sarmiento\OneDrive\Documents\Website Projects\cruz mausoleum 2.png" alt="Monument Detail" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Landscape+Design" alt="Landscape Design" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <button class="gallery-arrow gallery-arrow-right">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                                        
+                    <div class="gallery-indicators">
+                        <div class="gallery-indicator active" data-index="0"></div>
+                        <div class="gallery-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                                 
+                <!-- Industrial Projects  -->
+                <div class="gallery-category" data-category="industrial">
+                    <div class="gallery-carousel">
+                        <button class="gallery-arrow gallery-arrow-left">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"></polyline>
+                            </svg>
+                        </button>
+                                                
+                        <div class="gallery-projects">
+                            <div class="gallery-project active">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="Z:\PROJECT PICTURES\CRUZ MAUSOLEUM\cruz mausoleum 1.png" alt="Manufacturing Facility" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Cruz Mausoleum</h3>
+                                            <div class="gallery-project-description">
+                                                <p>A state-of-the-art production facility designed for efficiency and worker safety.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="Z:\PROJECT PICTURES\CRUZ MAUSOLEUM\cruz mausoleum 1.png" alt="Production Floor" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Control+Room" alt="Control Room" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="gallery-project">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="/placeholder.svg?height=400&width=600&text=Warehouse+Complex" alt="Warehouse Complex" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Warehouse Complex</h3>
+                                            <div class="gallery-project-description">
+                                                <p>A modern logistics facility optimized for storage and distribution operations.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Storage+Area" alt="Storage Area" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Loading+Dock" alt="Loading Dock" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <button class="gallery-arrow gallery-arrow-right">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                                        
+                    <div class="gallery-indicators">
+                        <div class="gallery-indicator active" data-index="0"></div>
+                        <div class="gallery-indicator" data-index="1"></div>
+                    </div>
+                </div>
+                                
+                <!-- Institutional Projects -->
+                <div class="gallery-category" data-category="institutional">
+                    <div class="gallery-carousel">
+                        <button class="gallery-arrow gallery-arrow-left">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"></polyline>
+                            </svg>
+                        </button>
+                                                
+                        <div class="gallery-projects">
+                            <div class="gallery-project active">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="/placeholder.svg?height=400&width=600&text=Educational+Center" alt="Educational Center" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Educational Learning Center</h3>
+                                            <div class="gallery-project-description">
+                                                <p>A modern educational facility designed for 21st-century learning.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Classroom" alt="Classroom" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Library" alt="Library" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                            <div class="gallery-project">
+                                <div class="gallery-layout">
+                                    <div class="gallery-main-image">
+                                        <img src="/placeholder.svg?height=400&width=600&text=Healthcare+Facility" alt="Healthcare Facility" class="gallery-image">
+                                        <div class="gallery-project-info">
+                                            <h3 class="gallery-project-title">Healthcare Facility</h3>
+                                            <div class="gallery-project-description">
+                                                <p>A comprehensive medical center designed for patient comfort and operational efficiency.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-side-images">
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Patient+Room" alt="Patient Room" class="gallery-image">
+                                        </div>
+                                        <div class="gallery-side-image">
+                                            <img src="/placeholder.svg?height=200&width=300&text=Medical+Equipment" alt="Medical Equipment" class="gallery-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <button class="gallery-arrow gallery-arrow-right">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                                        
+                    <div class="gallery-indicators">
+                        <div class="gallery-indicator active" data-index="0"></div>
+                        <div class="gallery-indicator" data-index="1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">CONTACT US</h2>
+                <div class="section-divider"></div>
+            </div>
+                        
+            <div class="contact-content">
+                <!--  Contact Form -->
+                <div class="contact-form-container">
+                    <h3 class="contact-form-title">Send us a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="user_name">Full Name *</label>
+                                <input type="text" id="user_name" name="user_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="user_email">Email Address *</label>
+                                <input type="email" id="user_email" name="user_email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="user_phone">Phone Number</label>
+                                <input type="tel" id="user_phone" name="user_phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service_type">Service Type</label>
+                                <select id="service_type" name="service_type">
+                                    <option value="">Select a service</option>
+                                    <option value="Residential Design">Residential Design</option>
+                                    <option value="Commercial Design">Commercial Design</option>
+                                    <option value="Monumental Design">Monumental Design</option>
+                                    <option value="Industrial Design">Industrial Design</option>
+                                    <option value="Institutional Design">Institutional Design</option>
+                                    <option value="Renovation">Renovation</option>
+                                    <option value="Consultation">Consultation</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us about your project or inquiry..." required></textarea>
+                        </div>
+                        <button type="submit" class="contact-submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                                        
+                    <!-- Success/Error Messages -->
+                    <div id="form-messages" class="form-messages"></div>
+                </div>
+                                
+                <!-- Contact Methods -->
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3.1 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.12.82.37 1.61.73 2.35a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.74.36 1.53.61 2.35.73A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3 class="contact-label">Phone Number</h3>
+                            <a href="" class="contact-value">09083456783</a>
+                        </div>
+                    </div>
+                                        
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3 class="contact-label">FACEBOOK</h3>
+                            <a href="https://www.facebook.com/profile.php?id=61577243352194" target="_blank" class="contact-value">Trowel Architectural Services</a>
+                        </div>
+                    </div>
+                                        
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3 class="contact-label">INSTAGRAM</h3>
+                            <a href="https://www.instagram.com/trowelarchitecturalservices/" target="_blank" class="contact-value">@trowelarchitecturalservices</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Trowel Architectural Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18,15 12,9 6,15"></polyline>
+        </svg>
+    </button>
+ 
+    <!--Image Modal-->
+    <div id="imageModal" class="image-modal">
+        <span class="image-modal-close">&times;</span>
+        <div class="image-modal-content">
+            <img id="modalImage" src="/placeholder.svg" alt="">
+        </div>
+    </div>
+
+    <script src="BRAINS2.js"></script>
+</body>
+</html>
